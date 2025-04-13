@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Work from './pages/Work';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollTop';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Navbar />
           <main className="">
             <AnimatePresence mode="wait">
+              <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
